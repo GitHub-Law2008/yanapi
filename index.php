@@ -15,7 +15,7 @@ if ($_GET['charset']=='GBK'){
           }
 	}else{
     header('Content-Type: text/html; charset=UTF-8');
-  $array=file('hitokoto.txt');
+  $array=file('data.txt');
   $rand=rand(0,3385);
   $string=$array[$rand];
     if ($_GET['code']==='js') {
